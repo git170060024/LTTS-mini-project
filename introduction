@@ -1,0 +1,11 @@
+#Introduction
+I decided to make project on Calender. A calendar is a chart or device which displays the date and the day of the week, and often the whole of a particular year divided up into months, weeks, and days. A calendar is a particular system for dividing time into periods such as years, months, and weeks, often starting from a particular point in history.It is a system of organizing days. This is done by giving names to periods of time, typically days, weeks, months and years. A date is the designation of a single, specific day within such a system. A calendar is also a physical record (often paper) of such a system.
+
+##Research
+The basic calender doesn't involve any of the operations related to finding interests. It is easy to apply. Thus by studying all these facts, the necessary functions has been implemented to get the required results in a better way. As in the calender can be printed on the papers through that we can get to know the days,weeks,date etc. All the information regarding the festivals good muhutas and the remeberables days and we can make a note under that so the specific day we can remember it.
+
+###Cost and Features
+As far as the project is well built and all the requirements met the cost can be varied according to the market.
+
+####Features
+No. of days present in a month. No. of months present in a year. No. of days present in a week. It can detect that on what date which day of week and the important note we can note under the dates.
