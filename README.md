@@ -17,6 +17,29 @@ It can detect that on what date which day of week and the important note we can 
 
 The system mainly involves three operation modes. They are dates declaration,  day declaration  and other note making modes for all important dates. All the operation modes are subdivided into required dates and days where user can choose the operation he wants and can perform accordingly. The result will be displayed at the end.
 
+# Research
+Benefits&Features
+
+PLAN FOR STUDY TIME. With so many things going on, you may wonder when you'll have time to study.
+
+TRACK DUE DATES.
+
+KEEPS FAMILY INFORMED.
+
+EASE ANXIETY.
+
+SEE AVAILABILITY, QUICKLY.
+
+
+Advantages
+   1. It sets boundaries.
+   
+   2. It keeps us on track.
+    
+   3. It keeps us accountable.
+   
+   4. It keeps us realistic.
+
 # SWOT Analysis
 Analysis on Strengths, Weaknesses, Opportunities and Threats.
 
