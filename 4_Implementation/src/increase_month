@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include"func.h"
+void increase_month(int *mm,  int *yy){ //increase the month by one
+    ++*mm;
+    if(*mm > 12){
+        ++*yy;
+        *mm = *mm - 12;
+    }
+}
