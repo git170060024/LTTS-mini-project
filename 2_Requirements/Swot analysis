@@ -17,3 +17,26 @@ In all the domains it can be used. As the project is portable and user-friendly,
 
 HOW
 System design is a solution for “HOW TO” approach to the creation of a new system. It translates system requirements into ways by which they can be made operational. It is a translational from a user oriented document to a document oriented programmers. For that, it provides the understanding and procedural details necessary for the implementation. Here UML diagrams are used to supplement the working of the new system. The system thus made should be reliable, durable and above all should have least possible maintenance costs.
+
+##Detail requirements
+
+High Level Requirements:
+
+--- TBD in Tabular Format
+
+ID	Description	Status
+HR01	To provide a reliable and easy to use tool that manages an individual's calendar	
+HR02	In a manner comparable to non-electronic media such as day planners and date books	
+HR03	To provide a secure group environment that manages a collection of individual calendars for the purposes of group scheduling and information sharing	
+HR04	To provide fully documented public domain source code for use by others	
+HR05	To provide a pedagogical example for use in the instruction of software engineering, including an example of the practical application of formal methods	
+
+Low level Requirements:
+
+--- TBD in Tabular Format
+
+ID	Description	Status
+LR01	The system should be able to work with any database	
+LR02	A programmer should be able to access the store	
+LR03	A programmer should be able to access the store as a Web Service (using SOAP and XML)	
+LR04	An administrator should be allowed to limit the number of entries a user can have in the store	
