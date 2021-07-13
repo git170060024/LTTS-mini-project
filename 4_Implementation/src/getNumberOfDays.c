@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"func.h"
+#include<calender.h>
 int getNumberOfDays(int month,int year){ //returns the number of days in given month
    switch(month){                          //and year
       case 1 : return(31);
