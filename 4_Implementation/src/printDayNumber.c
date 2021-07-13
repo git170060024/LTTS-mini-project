@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"func.h"
+#include<calender.h>
 void print_date(int mm, int yy){ //prints the name of month and year
     printf("---------------------------\n");
     gotoxy(25,6);
