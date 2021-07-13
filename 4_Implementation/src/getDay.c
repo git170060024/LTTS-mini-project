@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"func.h"
+#include<calender.h>
 char *getDay(int dd,int mm,int yy){
     int day;
     if(!(mm>=1 && mm<=12)){
