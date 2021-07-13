@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"func.h"
+#include<calender.h>
 void AddNote(){
     FILE *fp;
     fp = fopen("note.dat","ab+");
