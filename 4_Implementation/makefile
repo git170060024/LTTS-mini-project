@@ -5,10 +5,10 @@ PROJECT_NAME = Calender
 BUILD = build
 
 # All source code files
-SRC =src/calender_operations.c\
+SRC =src/*.c\
 
 # All test source files
-TEST_SRC = src/calender_operations.c\
+TEST_SRC = src/*.c\
 test/test_calender_operations.c\
 unity/unity.c\
 
