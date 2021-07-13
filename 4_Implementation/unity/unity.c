@@ -1,9 +1,3 @@
-/* =========================================================================
-    Unity Project - A Test Framework for C
-    Copyright (c) 2007-21 Mike Karlesky, Mark VanderVoord, Greg Williams
-    [Released under MIT License. Please refer to license.txt for details]
-============================================================================ */
-
 #include "unity.h"
 #include <stddef.h>
 
@@ -67,10 +61,9 @@ static const char PROGMEM UnityStrBreaker[]                = "------------------
 static const char PROGMEM UnityStrResultsTests[]           = " Tests ";
 static const char PROGMEM UnityStrResultsFailures[]        = " Failures ";
 static const char PROGMEM UnityStrResultsIgnored[]         = " Ignored ";
-#ifndef UNITY_EXCLUDE_DETAILS
 static const char PROGMEM UnityStrDetail1Name[]            = UNITY_DETAIL1_NAME " ";
 static const char PROGMEM UnityStrDetail2Name[]            = " " UNITY_DETAIL2_NAME " ";
-#endif
+
 /*-----------------------------------------------
  * Pretty Printers & Test Result Output Handlers
  *-----------------------------------------------*/
@@ -445,7 +438,7 @@ void UnityPrintFloat(const UNITY_DOUBLE input_number)
 
         /* build up buffer in reverse order */
         digits = 0;
-        while ((n != 0) || (digits <= decimals))
+        while ((n != 0) || (digits < (decimals + 1)))
         {
             buf[digits++] = (char)('0' + n % 10);
             n /= 10;
@@ -1002,7 +995,8 @@ void UnityAssertFloatSpecial(const UNITY_FLOAT actual,
             is_trait = !isinf(actual) && !isnan(actual);
             break;
 
-        default: /* including UNITY_FLOAT_INVALID_TRAIT */
+        case UNITY_FLOAT_INVALID_TRAIT:
+        default:
             trait_index = 0;
             trait_names[0] = UnityStrInvalidFloatTrait;
             break;
@@ -1142,7 +1136,8 @@ void UnityAssertDoubleSpecial(const UNITY_DOUBLE actual,
             is_trait = !isinf(actual) && !isnan(actual);
             break;
 
-        default: /* including UNITY_FLOAT_INVALID_TRAIT */
+        case UNITY_FLOAT_INVALID_TRAIT:
+        default:
             trait_index = 0;
             trait_names[0] = UnityStrInvalidFloatTrait;
             break;
