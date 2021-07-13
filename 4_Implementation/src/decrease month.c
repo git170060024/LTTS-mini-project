@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"func.h"
+#include<calender.h>
 void decrease_month(int *mm,  int *yy){ //decrease the month by one
     --*mm;
     if(*mm < 1){
