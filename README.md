@@ -5,6 +5,7 @@ Calender
  
  [![Code Quality - Static Code - Cppcheck](https://github.com/git170060024/LTTS-mini-project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/git170060024/LTTS-mini-project/actions/workflows/cppcheck.yml)
  [![CI](https://github.com/git170060024/LTTS-mini-project/actions/workflows/main.yml/badge.svg)](https://github.com/git170060024/LTTS-mini-project/actions/workflows/main.yml)
+ [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c095ed564f544292a96e1b43e9ba25ec)](https://www.codacy.com/gh/git170060024/LTTS-mini-project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=git170060024/LTTS-mini-project&amp;utm_campaign=Badge_Grade)
  
  ## Research
 The basic calender doesn't involve any of the operations related to finding interests. It is easy to apply. Thus by studying all these facts, the necessary functions has been implemented to get the required results in a better way. As in the calender can be printed on the papers through that we can get to know the days,weeks,date etc. All the information regarding the festivals good muhutas and the remeberables days and we can make a note under that so the specific day we can remember it.
