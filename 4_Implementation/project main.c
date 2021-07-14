@@ -221,7 +221,7 @@ int checkNote(int dd, int mm){
     return 0;
 }
 
-void printMonth(int mon,int year,int x,int y){ //prints the month with all days
+void printMonth(int mon,int year,int x,int y){ 
     int nod, day, cnt, d = 1, x1 = x, y1 = y, isNote = 0;
     if(!(mon>=1 && mon<=12)){
         printf("INVALID MONTH");
@@ -241,7 +241,7 @@ void printMonth(int mon,int year,int x,int y){ //prints the month with all days
     y++;
     nod = getNumberOfDays(mon,year);
     day = getDayNumber(d,mon,year);
-    switch(day){ //locates the starting day in calender
+    switch(day){ 
         case 0 :
             x=x;
             cnt=1;
