@@ -20,7 +20,7 @@ COORD xy = {0, 0};
 
 void gotoxy (int x, int y)
 {
-        xy.X = x; xy.Y = y; // X and Y coordinates
+        xy.X = x; xy.Y = y; 
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 }
 
@@ -78,13 +78,13 @@ void SetColorAndBackground(int ForgC, int BackC)
      return;
 }
 
-int check_leapYear(int year){ //checks whether the year passed is leap year or not
+int check_leapYear(int year){ 
     if(year % 400 == 0 || (year % 100!=0 && year % 4 ==0))
        return 1;
     return 0;
 }
 
-void increase_month(int *mm,  int *yy){ //increase the month by one
+void increase_month(int *mm,  int *yy){ 
     ++*mm;
     if(*mm > 12){
         ++*yy;
@@ -92,7 +92,7 @@ void increase_month(int *mm,  int *yy){ //increase the month by one
     }
 }
 
-void decrease_month(int *mm,  int *yy){ //decrease the month by one
+void decrease_month(int *mm,  int *yy){ 
     --*mm;
     if(*mm < 1){
         --*yy;
@@ -105,8 +105,8 @@ void decrease_month(int *mm,  int *yy){ //decrease the month by one
 }
 
 
-int getNumberOfDays(int month,int year){ //returns the number of days in given month
-   switch(month){                          //and year
+int getNumberOfDays(int month,int year){ 
+   switch(month){                    
       case 1 : return(31);
       case 2 : if(check_leapYear(year)==1)
 		 return(29);
@@ -126,7 +126,7 @@ int getNumberOfDays(int month,int year){ //returns the number of days in given m
    }
 }
 
-char *getName(int day){ //returns the name of the day
+char *getName(int day){
    switch(day){
       case 0 :return("Sunday");
       case 1 :return("Monday");
@@ -139,7 +139,7 @@ char *getName(int day){ //returns the name of the day
    }
 }
 
-void print_date(int mm, int yy){ //prints the name of month and year
+void print_date(int mm, int yy){ 
     printf("---------------------------\n");
     gotoxy(25,6);
     switch(mm){
@@ -160,7 +160,7 @@ void print_date(int mm, int yy){ //prints the name of month and year
     gotoxy(20,7);
     printf("---------------------------");
 }
-int getDayNumber(int day,int mon,int year){ //retuns the day number
+int getDayNumber(int day,int mon,int year){
     int res = 0, t1, t2, y = year;
     year = year - 1600;
     while(year >= 100){
@@ -314,7 +314,7 @@ void printMonth(int mon,int year,int x,int y){ //prints the month with all days
 void AddNote(){
     FILE *fp;
     fp = fopen("note.dat","ab+");
-    system("cls");
+    
     gotoxy(5,7);
     printf("Enter the date(DD/MM): ");
     scanf("%d%d",&R.dd, &R.mm);
@@ -370,7 +370,7 @@ int main(){
     int choice;
     char ch = 'a';
     while(1){
-        system("cls");
+        
         printf("1. Find Out the Day\n");
         printf("2. Print all the day of month\n");
         printf("3. Add Note\n");
